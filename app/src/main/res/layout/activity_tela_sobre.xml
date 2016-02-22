@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.conversor.TelaSobreActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tb_tela_sobre"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                android:minHeight="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <TextView
+                android:id="@+id/tv_desenvolvido_activity_tela_sobre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/iv_eu"
+                android:layout_marginTop="10dp"
+                android:text="Desenvolvido por Rafael Carlos Oliveira"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_desenvolvedor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_desenvolvido_activity_tela_sobre"
+                android:layout_marginTop="20dp"
+                android:text="Desenvolvedor na  "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/iv_logo_activity_tela_sobre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tb_tela_sobre"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_empresa_activity_tela_sobre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_desenvolvedor"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/tv_desenvolvedor"
+                android:layout_toRightOf="@+id/tv_desenvolvedor"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_contato_activity_tela_sobre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_empresa_activity_tela_sobre"
+                android:text="Contato: rafaelcarlosrc2014@gmail.com"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/iv_github"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_contato_activity_tela_sobre"
+                android:layout_marginTop="42dp"
+                android:src="@drawable/ic_github" />
+
+            <ImageView
+                android:id="@+id/iv_facebook"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/iv_github"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="42dp"
+                android:layout_toEndOf="@+id/iv_github"
+                android:layout_toRightOf="@+id/iv_github"
+                android:src="@drawable/ic_facebook" />
+
+            <ImageView
+                android:id="@+id/iv_eu"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/iv_logo_activity_tela_sobre"
+                android:src="@drawable/imagem_eu" />
+
+            <TextView
+                android:id="@+id/tv_servico_activiy_tela_sobre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_desenvolvedor"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/tv_desenvolvedor"
+                android:layout_toRightOf="@+id/tv_desenvolvedor"
+                android:text="Positivo Automação"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

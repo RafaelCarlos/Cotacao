@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grey">#ddd</color>
+    <color name="black">#000</color>
+
+    <color name="colorPrimaryLight">#00c9af</color>
+    <color name="colorPrimary">#5C4033</color>
+    <color name="colorPrimaryDark">#A0522D</color>
+    <color name="colorPrimarytext">#212121</color>
+    <color name="colorSecondText">#999</color>
+    <color name="coloLink">#1ea4f7</color>
+
+    <color name="colorAccent">#795548</color>
+
+    <color name="colorFAB">#1976D2</color>
+    <color name="colorFABPressed">#D32F2F</color>
+</resources>

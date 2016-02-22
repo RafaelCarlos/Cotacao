@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tb_novo"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                android:minHeight="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+            <ImageView
+                android:id="@+id/iv_logo_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tb_novo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_launcher" />
+
+            <RadioGroup
+                android:id="@+id/rg_moedas_novo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/iv_logo_main"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_dolar_novo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Dólar Comercial"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rb_euro_novo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Euro"
+                    android:textColor="#000000" />
+
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/et_moeda_novo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/rg_moedas_novo"
+                android:autoText="false"
+                android:background="#e7d4d4"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_valor_novo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/et_moeda_novo"
+                android:layout_marginTop="10dp"
+                android:text="Informe o valor:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_valor_real_calculo_novo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_valor_novo"
+                android:layout_marginTop="10dp"
+                android:background="#e7d4d4"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_resultado_activity_novo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_calcular_cotacao_novo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:paddingBottom="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp" />
+
+
+            <ImageView
+                android:id="@+id/iv_info_novo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tv_chama_tela_dolar_novo"
+                android:layout_alignRight="@+id/tv_chama_tela_dolar_novo"
+                android:layout_alignTop="@+id/iv_logo_main"
+                android:src="@drawable/ic_sobre" />
+
+            <TextView
+                android:id="@+id/tv_chama_tela_dolar_novo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/et_moeda_novo"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="10dp"
+                android:text="Dólar Turismo"
+                android:textColor="#000000" />
+
+
+            <Button
+                android:id="@+id/bt_calcular_cotacao_novo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_resultado_activity_novo"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                android:text="Calcular" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</LinearLayout>
