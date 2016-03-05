@@ -28,6 +28,7 @@ dependencies {
     compile 'com.android.support:support-v4:22.0.0'
     compile 'com.google.code.gson:gson:2.3.1'
     compile 'com.nispok:snackbar:2.10.+'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
     compile('com.mikepenz.materialdrawer:library:2.8.2@aar') {
         transitive = true
     }
