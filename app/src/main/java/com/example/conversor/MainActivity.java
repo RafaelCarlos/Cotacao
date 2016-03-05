@@ -221,8 +221,14 @@ class BuscaDados extends AsyncTask<String, Void, Cotacoes> {
     @Override
     protected Cotacoes
     doInBackground(String... params) {
+    
+         try {
+            jSon = Okhttp.run(params[0]);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        jSon = FabricaNet.buscaDadosWebService(params[0]);
+        //jSon = FabricaNet.buscaDadosWebService(params[0]);
 
         Cotacoes cote = new Cotacoes();
         try {
